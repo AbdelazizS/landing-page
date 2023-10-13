@@ -220,14 +220,22 @@ color: var(--main-color);
 .seudo::before{
     left: -20px;
 }
+
+
+.flex-container .text  {
+    max-width: 70%;}
+
 }
 @media (min-width:992px) {
     
 .seudo::before{
     left: -50px;
 }
+.nav-items .main-btn {
+    margin-right: 3rem;
 }
 
+}
 
 .subscribes {
     display: flex;
@@ -322,6 +330,7 @@ features section .....................
     box-shadow: 4px 4px 15px -6px rgba(0, 0, 0, .2);
     border: 1px solid #f7f7f7;
     /* margin-left: 1.5rem !important; */
+    /* cursor: grab; */
 }
 
 .feature-icon {
@@ -403,6 +412,51 @@ some edit on hoem swiper
 }
 
 
+/* 
+
+start build your websites
+ */
+
+ /* .start{
+    width: 100%;
+ } */
+ .start {
+    margin: 7rem 0;
+ }
+ .start .conatiner {
+    width: 90%;
+    margin: 0 auto;
+    background: #ecf1f1;
+    height: 30vh;
+    padding: 2rem;
+ }
+ .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+ }
+ .flex-container .text h2 {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* text-align: center; */
+    color: var(--main-color);
+    /* text-transform: capitalize; */
+    margin-bottom: 1.5rem;
+ }
+
+
+ .flex-container .text p {
+    color: #a5a2a2;
+    font-size: 1.5rem
+ }
+
+
+
+
+
 
 
 
@@ -482,6 +536,7 @@ some edit on hoem swiper
     font-weight:500;
     transition: .3s;
     cursor: pointer;
+    border: .1rem solid transparent;
 }
 .button--flex {
     display: flex;
@@ -672,9 +727,14 @@ position: fixed;
     .home .home-img img {
         width: 340px;
     }
+
     
 .secction-title h2 , .features .feature-title h2{
     font-size: 3rem;}
+
+    /* .start .flex-container .text {
+        max-width: 100%;
+    } */
     
 }
     
@@ -686,6 +746,11 @@ position: fixed;
             color: #a5a2a2;
             font-size: 1.6rem;
         }
+        
+    /* .start .flex-container{
+        gap: 5rem;
+        flex-direction: column;
+    } */
 }
 @media (max-width:576px) {
 
@@ -697,8 +762,11 @@ position: fixed;
         padding-top:10rem;
         width: 100%;
     }
-
-    .features .container {
+    .start .conatiner{
+        width:100% ;
+        height: max-content;
+    }
+    .features .container  {
         width: 100%;
         margin: 0 auto;
         height: 60%;
@@ -726,4 +794,16 @@ position: fixed;
             color: #a5a2a2;
             font-size: 1.6rem;
         }
+}
+
+@media (max-width:767px)  {
+    
+    .start .flex-container{
+        gap: 5rem;
+        flex-direction: column;
+    }
+    /* .flex-container .text {
+        width: max-content;
+    }
+     */
 }
