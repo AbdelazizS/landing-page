@@ -169,6 +169,14 @@ color: var(--main-color);
         padding:1rem 2.5rem;
 }
 
+
+
+.flex-image{
+    width: 100%;
+}
+.flex-image img {
+    width: 100%;
+}
 .home .home-img {
     display: flex;
 }
